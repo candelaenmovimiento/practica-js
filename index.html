@@ -116,7 +116,15 @@
       function wordBlanks(myNoun, myAdj, myVerb, myAdverb) {
         var result = "";
         result +=
-          "The " + myAdj + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
+          "The " +
+          myAdj +
+          " " +
+          myNoun +
+          " " +
+          myVerb +
+          " to the store " +
+          myAdverb +
+          ".";
         return result;
       }
 
@@ -125,156 +133,304 @@
     </script>
 
     <script>
-        var ourArray = [["John", 23], ["everything", 090909]];
-        var myArray = ["quincy", 2];
+      var ourArray = [
+        ["John", 23],
+        ["everything", 090909],
+      ];
+      var myArray = ["quincy", 2];
     </script>
 
-   //<script>
-        var myArray = [50,60,70];
-        var ourData = ourArray [0];
+    //
+    <script>
+      var myArray = [50, 60, 70];
+      var ourData = ourArray[0];
 
-        var myData = myArray[0];
-        console.log(myData);
+      var myData = myArray[0];
+      console.log(myData);
     </script>
 
     <script>
-        var ourArray = [18,64,99];
-        ourArray[1] = 55;
-        console.log(ourArray);
+      var ourArray = [18, 64, 99];
+      ourArray[1] = 55;
+      console.log(ourArray);
     </script>
 
     <script>
-        var myArray = ["Candela",23,1999];
-        myData = myArray [1];
-        console.log(myData);
+      var myArray = ["Candela", 23, 1999];
+      myData = myArray[1];
+      console.log(myData);
     </script>
 
     <script>
-        var myArray = [[1,2,3],[4,5,6],[7,8,9],[[10,11,12],13,14]];
-        
-        var myData = myArray[2][1];
-        console.log(myData);
+      var myArray = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [[10, 11, 12], 13, 14],
+      ];
 
+      var myData = myArray[2][1];
+      console.log(myData);
     </script>
 
     <script>
-        var myArray = [["Candela", "Errandonea"]];
-        myArray.push(["Rivarola"]);
-        console.log(myArray[1]);
+      var myArray = [["Candela", "Errandonea"]];
+      myArray.push(["Rivarola"]);
+      console.log(myArray[1]);
     </script>
 
     <script>
-        var myArray = [1,2,3];
-        var removedFromMyArray = myArray.pop();
-        console.log(myArray);
+      var myArray = [1, 2, 3];
+      var removedFromMyArray = myArray.pop();
+      console.log(myArray);
     </script>
 
     <script>
-        var ourArray = ["Stimpson", "J", ["cat"]];
-        var removedFromOurArray = ourArray.shift();
-        console.log(ourArray);
-        
-        ourArray.unshift("Pipilino");
-        console.log(ourArray);
-    </script>
-    
-    <script>
-       var myArray = [["john", 23], ["dog", 3]];
-       myArray.shift();
-       myArray.unshift(["Paul", 35]);
-       console.log(myArray);
+      var ourArray = ["Stimpson", "J", ["cat"]];
+      var removedFromOurArray = ourArray.shift();
+      console.log(ourArray);
+
+      ourArray.unshift("Pipilino");
+      console.log(ourArray);
     </script>
 
     <script>
-      var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 12]];
-
+      var myArray = [
+        ["john", 23],
+        ["dog", 3],
+      ];
+      myArray.shift();
+      myArray.unshift(["Paul", 35]);
+      console.log(myArray);
     </script>
 
     <script>
-    function ourReusableFunction() {
-      console.log("Heyya, World");
+      var myList = [
+        ["cereal", 3],
+        ["milk", 2],
+        ["bananas", 3],
+        ["juice", 2],
+        ["eggs", 12],
+      ];
+    </script>
 
-    }
+    <script>
+      function ourReusableFunction() {
+        console.log("Heyya, World");
+      }
 
-    ourReusableFunction();
-    ourReusableFunction();
-    ourReusableFunction();
-    ourReusableFunction();
-  </script>
+      ourReusableFunction();
+      ourReusableFunction();
+      ourReusableFunction();
+      ourReusableFunction();
+    </script>
 
-  <script>
-    function reusableFunction() {
-      console.log("Hi World");
-    }
+    <script>
+      function reusableFunction() {
+        console.log("Hi World");
+      }
 
-    reusableFunction();
-  </script>
+      reusableFunction();
+    </script>
 
-  <script>
-    function ourFunctionWithArgs(a, b) {
-      console.log(a - b);
-    }
+    <script>
+      function ourFunctionWithArgs(a, b) {
+        console.log(a - b);
+      }
 
-    ourFunctionWithArgs(10, 5);
-  </script>
+      ourFunctionWithArgs(10, 5);
+    </script>
 
-  <script>
-    function functionWithArgs(a, b) {
-      console.log(a + b);
-    }
+    <script>
+      function functionWithArgs(a, b) {
+        console.log(a + b);
+      }
 
-    functionWithArgs(10, 5);
-  </script>
+      functionWithArgs(10, 5);
+    </script>
 
-  <script>
-    var myGlobal = 10;
-    oopsGlobal = 5;
-  </script>
+    <script>
+      var myGlobal = 10;
+      oopsGlobal = 5;
+    </script>
 
-  <script>
-    function myLocalScope() {
-      var myVar = 5;
-      console.log(myVar);
-    }
+    <script>
+      function myLocalScope() {
+        var myVar = 5;
+        console.log(myVar);
+      }
 
-    myLocalScope();
-    // console.log(myVar); no se lo puede llamar desde afuera de la funcion.
-  </script>
+      myLocalScope();
+      // console.log(myVar); no se lo puede llamar desde afuera de la funcion.
+    </script>
 
-  <script>
-    var outerWear = "T-shirt";
-    function myOutfit() {
-      var outerWear = "sweater";
-      return outerWear;
-    }
-    console.log(myOutfit());
-    console.log(outerWear);
-  </script>
+    <script>
+      var outerWear = "T-shirt";
+      function myOutfit() {
+        var outerWear = "sweater";
+        return outerWear;
+      }
+      console.log(myOutfit());
+      console.log(outerWear);
+    </script>
 
-  <script>
-     function minusSeven(num) {
-      return num - 7;        
-     }
+    <script>
+      function minusSeven(num) {
+        return num - 7;
+      }
 
-     console.log(minusSeven(10));
-  </script>
+      console.log(minusSeven(10));
+    </script>
 
-  <script>
-    function timesFive(num) {
-      return num * 5;
-    }
+    <script>
+      function timesFive(num) {
+        return num * 5;
+      }
 
-    console.log(timesFive(10));
-  </script>
+      console.log(timesFive(10));
+    </script>
 
-<script>
-  var sum = 0;
-  function addThree() {
-    sum += 3;
-  }
+    <script>
+      var sum = 0;
+      function addThree() {
+        sum += 3;
+      }
 
-  console.log(addThree(3));
-</script>
+      console.log(addThree(3));
+    </script>
 
+    <script>
+      var changed = 0;
+
+      function change(num) {
+        return (num + 5) / 3;
+      }
+      changed = change(10);
+      console.log(change(10));
+    </script>
+
+    <script>
+      var processed = 0;
+      function processArg(num) {
+        return (num + 3) / 5;
+      }
+
+      processed = processArg(7);
+      console.log(processArg);
+    </script>
+
+    <script>
+      function nextInLine(arr, item) {
+        arr.push(item);
+        return arr.shift();
+      }
+
+      var testArr = [1, 2, 3, 4, 5];
+      console.log("Before: " + JSON.stringify(testArr));
+      console.log(nextInLine(testArr, 6));
+      console.log("After: " + JSON.stringify(testArr));
+    </script>
+
+    <script>
+      function welcomeToBooleans() {
+        return false;
+      }
+    </script>
+
+    <script>
+      function ourTrueOrFalse(isItTrue) {
+        if (isItTrue) {
+          return "Yes, It`s true";
+        }
+        return "No, It`s false";
+      }
+
+      console.log(ourTrueOrFalse(false));
+    </script>
+
+    <script>
+      function trueOrFalse(wasThatTrue) {
+        if (wasThatTrue) {
+          return "yes, that was true";
+        }
+        return "No, that was false";
+      }
+
+      console.log(trueOrFalse(true));
+    </script>
+
+    <script>
+      function wouldYouLoveMeIfIWasAWorm(isItTrue) {
+        if (isItTrue) {
+          return "Yes, yes i would love you if you were a worm";
+        }
+        return "No, i wouldn't love you if you were a worm";
+      }
+      console.log(wouldYouLoveMeIfIWasAWorm(true));
+    </script>
+
+    <script>
+      function wouldYouLoveMeIfIWasAWorm(isItTrue) {
+        if (isItTrue) {
+          return "Yes, yes i would love you if you were a worm";
+        } else {
+          return "No, i wouldn't love you if you were a worm";
+        }
+      }
+      console.log(wouldYouLoveMeIfIWasAWorm(false));
+      // ## because I cannot love a worm ahr
+    </script>
+
+    <script>
+      function testEqual(val) {
+        if (val == 12) {
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+
+      console.log(testEqual(9));
+    </script>
+
+    <script>
+      function testStrict(val) {
+        if (val === 7) {
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+      console.log(testStrict(7));
+    </script>
+
+    <script>
+      function compareEquality(a, b) {
+        if (a === b) {
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+
+      console.log(compareEquality(10, "10"));
+    </script>
+
+    <script>
+      function testNotEqual(val) {
+        if (val != 99) {
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+      console.log(testNotEqual("99"));
+    </script>
+
+    <script>
+      function testStrictNotEqual(val) {
+        if (val !== 17) {
+          return "Not Equal";
+        }
+        return "Equal";
+      }
+      console.log(testStrictNotEqual("17"));
+    </script>
   </body>
 </html>
