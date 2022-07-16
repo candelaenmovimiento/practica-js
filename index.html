@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <!-- <script>
+    <script>
       console.log("hello world");
     </script>
 
@@ -434,7 +434,7 @@
       }
       console.log(testStrictNotEqual("17"));
     </script>
-    -->
+   
 
     <script>
       function testGreaterThan(val) {
@@ -580,7 +580,7 @@
       </ul>
     </div>
 
-    <!-- <script>
+    <script>
       var names = ["Holes-in-one", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"];
       function golfScore(par, strokes) {
         if (strokes == 1) {
@@ -601,9 +601,9 @@
       }
 
       console.log(golfScore(5, 8));
-    </script> -->
+    </script>
 
-    <!-- <script>
+    <script>
       function caseInSwitch(val) {
         var answer = "";
         switch(val) {
@@ -625,9 +625,9 @@
       }
 
       console.log(caseInSwitch(2));
-    </script> -->
+    </script>
 
-    <!-- <script>
+    <script>
       function switchOfStuff(val) {
         var answer = "";
         switch(val) {
@@ -649,7 +649,7 @@
       }
 
       console.log(switchOfStuff(5));
-    </script> -->
+    </script>
 
     <script>
       function sequentialSizes(val) {
@@ -712,7 +712,9 @@
       //etc
     </script>
 
+      
     <script>
+      //boolean
       function isLess(a, b) {
         return a < b;
       }
@@ -721,7 +723,91 @@
     </script>
 
     <script>
-      function abTest(a,b)
+      function abTest(a,b){
+if (a < 0 || b < 0) {
+  return undefined;
+}
+//return Math.round(Math.pow(Math.sqrt(a))) + Math.sqrt(Math)
+      }
+      console.log(abTest(-2,2));
     </script>
+
+    <script>
+      var count = 0;
+      function cc(card) {
+        switch (card) {
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            count++;
+            break;
+          case 10:
+          case "J":
+          case "Q":
+          case "K":
+          case "A":
+            count--;
+            break;
+        }
+
+        var holdbet = "hold";
+        if (count > 0) {
+          holdbet = "Bet";
+        }
+
+        return count + " " + holdbet;
+      }
+      //WTF cc(2); cc("K"); cc(10); cc("K"); cc("A");
+      console.log(cc(4));
+    </script>
+
+    <script>
+      var ourDog = {
+        name: "Camper",
+        legs: "4",
+        tails: 1,
+        friend: ["everything"],
+      };
+
+      //UPDATE OBJECT PROPERTIES WITH NOTATION, and assignment operator (=)
+      ourDog.name = "Happy Camper";
+
+      //ADD NEW PROPERTIES TO AN OBJECT
+      ourDog.bark = "bow-wow";
+      ourDog["stare"] = "dead";
+
+      //DELETE 
+      delete ourDog.bark;
+    </script>
+
+    <script>
+      var testObj = {
+        "hat": "ballcap",
+        "shirt": "jersey",
+        "shoes and socks": "cleats",
+        "tie or bow": "ew"
+      };
+//DOT NOTATION
+      var hatValue = testObj.hat;
+      var shirtValue = testObj.shirt;
+//BRACKET NOTATION (can use anytime, required when the name has a space in it)
+      var shoesAndSocksValue = testObj["shoes and socks"];
+      var neckValue = testObj["tie or bow"];
+    </script>
+
+    <script>
+      var testObj = {
+        12: "Namath",
+        16: "Montana",
+        19: "Unitas"
+      };
+
+      var playerNumber = 16;
+      var player = testObj[playerNumber];
+    </script>
+
+
   </body>
 </html>
